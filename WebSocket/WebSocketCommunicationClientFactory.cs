@@ -38,9 +38,10 @@ namespace ServiceFabric.Utils.CommunicationClients.WebSocket
             }
 
             string endpointAddress = endpoint;
-            if(!endpoint.EndsWith("/"))
+
+            if (!endpointAddress.EndsWith("/"))
             {
-                endpointAddress = endpointAddress += "/";
+                endpointAddress = endpointAddress + "/";
             }
 
             WebSocketCommunicationClient client = new WebSocketCommunicationClient(endpointAddress);
