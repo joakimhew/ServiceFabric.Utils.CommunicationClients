@@ -180,18 +180,13 @@ namespace ServiceFabric.Utils.CommunicationClients.WebSocket
                         catch (Exception ex)
                         {
                             // catch any error in the appAction and notify the client
-                            wsresponse = await new ProtobufWebSocketSerializer().SerializeAsync(
-                                new WebSocketResponseMessage
-                                {
-                                    Result = WebSocketResult.Error,
-                                    Value = Encoding.UTF8.GetBytes(ex.Message)
-                                });
+
                         }
 
                         // Send Result back to client
                         await webSocket.SendAsync(
                             new ArraySegment<byte>(wsresponse),
-                            WebSocketMessageType.Binary,
+                            WebSocketMessageType.Text,
                             true,
                             cancellationToken);
                     }

@@ -38,7 +38,7 @@ namespace ServiceFabric.Utils.CommunicationClients.WebSocket
             byte[] receiveBytes = new byte[10240];
 
             // Send request operation
-            await _clientWebSocket.SendAsync(new ArraySegment<byte>(payload), WebSocketMessageType.Binary, true, CancellationToken.None);
+            await _clientWebSocket.SendAsync(new ArraySegment<byte>(payload), WebSocketMessageType.Text, true, CancellationToken.None);
 
             WebSocketReceiveResult receiveResult =
                 await _clientWebSocket.ReceiveAsync(new ArraySegment<byte>(receiveBytes), CancellationToken.None);
