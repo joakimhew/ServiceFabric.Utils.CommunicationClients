@@ -1,6 +1,5 @@
 ﻿using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Communication.Client;
-using ServiceFabric.Utils.Exceptions;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -75,9 +74,7 @@ namespace ServiceFabric.Utils.CommunicationClients.Http
         private static IEnumerable<IExceptionHandler> CreateExceptionHandlers(
             IEnumerable<IExceptionHandler> additionalExceptionHandlers)
         {
-            return
-                new[] { new ApiHttpExceptionHandler() }.Union(additionalExceptionHandlers ??
-                                                           Enumerable.Empty<IExceptionHandler>());
+            return null;
         }
 
 
