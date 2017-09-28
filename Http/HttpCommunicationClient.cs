@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Microsoft.ServiceFabric.Services.Communication.Client;
+using System;
 using System.Fabric;
 using System.Net.Http;
-using Microsoft.ServiceFabric.Services.Communication.Client;
 
 namespace ServiceFabric.Utils.CommunicationClients.Http
 {
