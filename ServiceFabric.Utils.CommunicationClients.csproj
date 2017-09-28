@@ -16,7 +16,7 @@
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
   <PackageReference Include="Microsoft.ServiceFabric.Services" Version="2.6.210" />
-  <PackageReference Include="System.Net.Http" Version="4.3.2" />
+  <Reference Include="System.Net.Http" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
