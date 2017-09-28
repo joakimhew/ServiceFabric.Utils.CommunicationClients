@@ -7,12 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceFabric.Utils.Communi
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B823A27C-C641-46E1-A349-EE6BC7985769}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{B823A27C-C641-46E1-A349-EE6BC7985769}.Release|Any CPU.ActiveCfg = Release|x64
+		{B823A27C-C641-46E1-A349-EE6BC7985769}.Debug|x64.ActiveCfg = Debug|x64
+		{B823A27C-C641-46E1-A349-EE6BC7985769}.Debug|x64.Build.0 = Debug|x64
+		{B823A27C-C641-46E1-A349-EE6BC7985769}.Release|x64.ActiveCfg = Release|x64
+		{B823A27C-C641-46E1-A349-EE6BC7985769}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
